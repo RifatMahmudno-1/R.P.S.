@@ -7,7 +7,6 @@ document.querySelector('.btn').addEventListener('click',function(){
     document.querySelector('.rpcimg').style='display: grid;grid-template-columns: 30% 30% 30%; justify-content: space-around;';
     document.querySelector('.btn').style.display='none';
     document.querySelector('.endpoint').style.display='none';
-    document.querySelector('.draw').style.display='none';
 });
 
 document.querySelector('.btn-1').addEventListener('click',function(){
@@ -28,7 +27,7 @@ document.querySelector('.btn-3').addEventListener('click',function(){
 function main(){
     var finish=document.querySelector('.inp').value;
     cIscore=Math.floor(Math.random()*3+1);
-
+    document.querySelector('.draw').style.display='none';
     psimg.src='dice-'+pIscore+'.png';
     csimg.src='dice-'+cIscore+'.png';
 
@@ -47,7 +46,7 @@ function main(){
     }else if(cIscore==3&&pIscore==2){
         scomputer++
     }else{
-        document.querySelector('.draw').style='text-align:center; font-size: 30px; color: blue';
+        document.querySelector('.draw').style='display:block;text-align:center; font-size: 30px; color: blue';
         document.querySelector('.draw').innerHTML='<h1>Draw!!<h1>';
     }
 
