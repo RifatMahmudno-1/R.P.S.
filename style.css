@@ -1,12 +1,17 @@
 *{
 	margin:0;
 	padding: 0;
-	font-family: 'Signika';
+	font-family: 'Signika', sans-serif, cursive;
 	font-size: 20px;
 }
 .all{
 	height: 100vh;
+	background: -o-linear-gradient(135deg, red, orange, yellow);
 	background: linear-gradient(-45deg, red, orange, yellow);
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 .all h1{
 	text-align: center;
@@ -15,9 +20,12 @@
 }
 .main{
 	margin: 3% 0;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 30% 30%;
 	grid-template-columns: 30% 30%;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .main h2{
 	text-align: center;
@@ -35,6 +43,8 @@
 	margin: 10% auto;
 	border: 2px solid red;
 	padding: 1% 15%;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 	border-radius: 10px;
 }
@@ -49,6 +59,8 @@
 	font-size: 150%;
 }
 .btn{
+	background: -o-linear-gradient(rgb(255, 0, 179),rgb(255, 0, 119));
+	background: -webkit-gradient(linear,left top, left bottom,from(rgb(255, 0, 179)),to(rgb(255, 0, 119)));
 	background: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 119));
 	border: 2px solid transparent;
 	border-radius: 10px;
