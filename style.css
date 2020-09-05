@@ -1,0 +1,72 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Signika';
+	font-size: 20px;
+}
+.all{
+	height: 100vh;
+	background: linear-gradient(-45deg, red, orange, yellow);
+}
+.all h1{
+	text-align: center;
+	font-size: 150%;
+	padding-top: 1%;
+}
+.main{
+	margin: 3% 0;
+	display: grid;
+	grid-template-columns: 30% 30%;
+	justify-content: space-around;
+}
+.main h2{
+	text-align: center;
+	margin: 2% 0;
+}
+.pimg,.cimg{
+	text-align: center;
+}
+.psimg,.csimg{
+	height: 150px;
+}
+.main .scorebox{
+	text-align: center;
+	font-size: 150%;
+	margin: 10% auto;
+	border: 2px solid red;
+	padding: 1% 15%;
+	width: fit-content;
+	border-radius: 10px;
+}
+.splayer,.scomputer{
+	font-size: 300%;
+}
+.dstart{
+	text-align: center;
+}
+.dstart button{
+	padding: 1% 2%;
+	font-size: 150%;
+}
+.btn{
+	background: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 119));
+	border: 2px solid transparent;
+	border-radius: 10px;
+}
+.endpoint{
+	width: 100%;
+	text-align: center;
+}
+.endpoint input{
+	background: rgba(255, 255, 255, 0.658);
+}
+.rpcimg{
+	display: none;
+}
+.rpcimg button{
+	width: 100%;
+}
+button img{
+	width: 100%;
+	max-width: 80px;
+}

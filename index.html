@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>S.P.S</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="all">
+		<h1>Stone, Paper, Scissors</h1>
+		<div class="main">
+			<div class="player">
+				<div class="mplayer"><h2>Player</h2></div>
+				<div class="pimg"><img class="psimg" src="dice-1.png"></div>
+				<div class="scorebox">Score<div class="splayer">00</div></div>
+				<div class="dstart"><button class="btn">Start Playing</button></div>
+				<span class="rpcimg">
+					<button class="btn btn-1"><img src="dice-1.png" alt="rock"></button>
+					<button class="btn btn-2"><img src="dice-2.png" alt="rock"></button>
+					<button class="btn btn-3"><img src="dice-3.png" alt="rock"></button>
+				</span>
+				<div class="winner"></div>
+			</div>
+			<div class="computer">
+				<div class="mcomputer"><h2>Computer</h2></div>
+				<div class="cimg"><img class="csimg" src="dice-2.png"></div>
+				<div class="scorebox">Score<div class="scomputer">00</div></div>
+				<div class="endpoint">
+					<label for="inp">Winning Point: (Important)</label>
+					<input type="number" class="inp" placeholder="Type before starting">
+				</div>
+				<div class="draw"></div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="script.js"></script>
+</html>
