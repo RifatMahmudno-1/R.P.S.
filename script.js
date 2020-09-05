@@ -57,10 +57,13 @@ function main(){
 function winner(){
     var finish=document.querySelector('.inp').value;
     if(splayer==finish&&splayer>0){
-        document.querySelector('.winner').innerHTML='<h1 style="text-align:center; font-size: 200%; color: green; margin:2% 0;">You Won<br><Button onclick="window.location.reload()" style="background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179)); border: none; padding: 1% 2%; font-size: 60%">Restart</Button></h1>'
+        document.querySelector('.winner').innerHTML='<h1 style="text-align:center; font-size: 200%; color: green; margin:2% 0;">You Won<br><Button onclick="window.location.reload()" style="background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179)); border: none; padding: 1% 2%; font-size: 60%">Restart</Button></h1>';
+        document.querySelector('.rpcimg').style.display='none';
     }else if(scomputer==finish&&scomputer>0){
-        document.querySelector('.winner').innerHTML='<h1 style="text-align:center; font-size: 200%; color: red; margin:2% 0;">You Lose<br><Button onclick="window.location.reload()" style="background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179)); border: none; padding: 1% 2%; font-size: 60%">Restart</Button></h1>'
+        document.querySelector('.winner').innerHTML='<h1 style="text-align:center; font-size: 200%; color: red; margin:2% 0;">You Lose<br><Button onclick="window.location.reload()" style="background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179)); border: none; padding: 1% 2%; font-size: 60%">Restart</Button></h1>';
+        document.querySelector('.rpcimg').style.display='none';
     }else{
-        document.querySelector('.winner').innerHTML='<h1 style="text-align:center; font-size: 100%; color: black; margin:2% 0;">You forgot to set winning point<br><Button onclick="window.location.reload()" style="background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179)); border: none; padding: 1% 2%; font-size: 100%">Restart Now</Button></h1>'
+        document.querySelector('.winner').innerHTML='<h1 style="text-align:center; font-size: 100%; color: black; margin:2% 0;">You forgot to set winning point<br><Button onclick="window.location.reload()" style="background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179)); border: none; padding: 1% 2%; font-size: 100%">Restart Now</Button></h1>';
+        document.querySelector('.rpcimg').style.display='none';
     }
 };
