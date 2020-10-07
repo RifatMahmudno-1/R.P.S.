@@ -1,9 +1,9 @@
-*{
-	margin:0;
+* {
+	margin: 0;
 	padding: 0;
-	font-family: 'Signika', sans-serif, cursive;
+	font-family: "Signika", sans-serif, cursive;
 }
-.all{
+.all {
 	height: 100vh;
 	background: -o-linear-gradient(135deg, red, orange, yellow);
 	background: linear-gradient(-45deg, red, orange, yellow);
@@ -13,31 +13,33 @@
 	user-select: none;
 	font-size: 20px;
 }
-.all h1{
+.all h1 {
 	text-align: center;
 	font-size: 150%;
 	padding-top: 1%;
 }
-.main{
+.main {
 	margin: 3% 0;
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 30% 30%;
 	grid-template-columns: 30% 30%;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 }
-.main h2{
+.main h2 {
 	text-align: center;
 	margin: 2% 0;
 }
-.pimg,.cimg{
+.pimg,
+.cimg {
 	text-align: center;
 }
-.psimg,.csimg{
+.psimg,
+.csimg {
 	height: 150px;
 }
-.main .scorebox{
+.main .scorebox {
 	text-align: center;
 	font-size: 150%;
 	margin: 10% auto;
@@ -48,41 +50,42 @@
 	width: fit-content;
 	border-radius: 10px;
 }
-.splayer,.scomputer{
+.splayer,
+.scomputer {
 	font-size: 300%;
 }
-.dstart{
+.dstart {
 	text-align: center;
 }
-.dstart button{
+.dstart button {
 	padding: 1% 2%;
 	font-size: 150%;
 }
-.btn{
-	background: -o-linear-gradient(rgb(255, 0, 179),rgb(255, 0, 119));
-	background: -webkit-gradient(linear,left top, left bottom,from(rgb(255, 0, 179)),to(rgb(255, 0, 119)));
-	background: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 119));
+.btn {
+	background: -o-linear-gradient(rgb(255, 0, 179), rgb(255, 0, 119));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 0, 179)), to(rgb(255, 0, 119)));
+	background: linear-gradient(rgb(255, 0, 179), rgb(255, 0, 119));
 	border: 2px solid transparent;
 	border-radius: 10px;
 }
-.endpoint{
+.endpoint {
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 }
-.endpoint input{
+.endpoint input {
 	background: rgba(255, 255, 255, 0.658);
 	width: 100%;
 	max-width: 300px;
 	font-size: 20px;
 }
-.rpcimg{
+.rpcimg {
 	display: none;
 }
-.rpcimg button{
+.rpcimg button {
 	width: 100%;
 }
-button img{
+button img {
 	width: 100%;
 	max-width: 80px;
 }
