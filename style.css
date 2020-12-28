@@ -18,6 +18,10 @@
 	font-size: 150%;
 	padding-top: 1%;
 }
+.h1al{
+	display: none;
+	color: red
+}
 .main {
 	margin: 3% 0;
 	display: -ms-grid;
@@ -80,7 +84,9 @@
 	font-size: 20px;
 }
 .rpcimg {
-	display: none;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-around;
 }
 .rpcimg button {
 	width: 100%;
@@ -88,4 +94,23 @@
 button img {
 	width: 100%;
 	max-width: 80px;
+}
+.draw{
+	display: none;
+	color: blue;
+}
+.win_pc{
+	color: red;
+	display: none;
+}
+.win_pl{
+	color: green;
+	display: none;
+}
+.rbtn{
+	 background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179));
+	 border: none;
+	 padding: 1% 2%;
+	 font-size: 80%;
+	border-radius: 10px;
 }

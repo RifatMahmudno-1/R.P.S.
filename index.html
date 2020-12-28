@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="style.css" />
-		<title>S.P.S</title>
-	</head>
 
-	<body>
-		<section class="all">
-			<h1>Stone, Paper, Scissors</h1>
-			<div class="main">
-				<div class="player">
-					<div class="mplayer">
-						<h2>Player</h2>
-					</div>
-					<div class="pimg"><img draggable="false" class="psimg" src="dice.png" /></div>
-					<div class="scorebox">
-						Score
-						<div class="splayer">00</div>
-					</div>
-					<div class="dstart"><button class="btn">Start Playing</button></div>
-					<span class="rpcimg">
-						<button class="btn btn-1"><img draggable="false" src="dice-1.png" alt="rock" /></button>
-						<button class="btn btn-2"><img draggable="false" src="dice-2.png" alt="rock" /></button>
-						<button class="btn btn-3"><img draggable="false" src="dice-3.png" alt="rock" /></button>
-					</span>
-					<div class="winner"></div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet" />-->
+	<link rel="stylesheet" href="style.css" />
+	<title>S.P.S</title>
+</head>
+
+<body>
+	<section class="all">
+		<h1>Stone, Paper, Scissors</h1>
+		<div class="main">
+			<div class="player">
+				<div class="mplayer">
+					<h2>Player</h2>
 				</div>
-				<div class="computer">
-					<div class="mcomputer">
-						<h2>Computer</h2>
-					</div>
-					<div class="cimg"><img draggable="false" class="csimg" src="dice.png" /></div>
-					<div class="scorebox">
-						Score
-						<div class="scomputer">00</div>
-					</div>
-					<div class="endpoint">
-						<label for="inp">Winning Point: (Important)</label>
-						<input type="number" class="inp" placeholder="Type before starting" />
-					</div>
-					<div class="draw"></div>
+				<div class="pimg"><img draggable="false" class="psimg" src="dice.png" /></div>
+				<div class="scorebox">
+					Score
+					<div class="splayer">00</div>
+				</div>
+				<div class="dstart"><button class="btn">Start Playing</button></div>
+				<span class="rpcimg">
+					<button class="btn btn-1"><img draggable="false" src="dice-1.png" alt="rock" /></button>
+					<button class="btn btn-2"><img draggable="false" src="dice-2.png" alt="rock" /></button>
+					<button class="btn btn-3"><img draggable="false" src="dice-3.png" alt="rock" /></button>
+				</span>
+				<div class="win_pl">
+					<h1>You've won the match<br><Button class='rbtn' onclick="window.location.reload()">Restart</Button></h1>
 				</div>
 			</div>
-		</section>
-	</body>
-	<script src="script.js"></script>
+			<div class="computer">
+				<div class="mcomputer">
+					<h2>Computer</h2>
+				</div>
+				<div class="cimg"><img draggable="false" class="csimg" src="dice.png" /></div>
+				<div class="scorebox">
+					Score
+					<div class="scomputer">00</div>
+				</div>
+				<div class="endpoint">
+					<label for="inp">Winning Point: (Important)</label>
+					<input type="number" class="inp" placeholder="Type before starting" />
+				</div>
+				<h1 class="h1al">Input value between 0 and 100</h1>
+				<h1 class="draw">Draw!!</h1>
+				<div class="win_pc">
+					<h1>You've lost.<br><Button class='rbtn' onclick="window.location.reload()">Restart</Button></h1>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="script.js"></script>
+
 </html>
