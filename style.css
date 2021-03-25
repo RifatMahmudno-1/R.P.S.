@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	font-family: "Signika", sans-serif, cursive;
 }
+
 .all {
 	height: 100vh;
 	background: -o-linear-gradient(135deg, red, orange, yellow);
@@ -13,15 +16,18 @@
 	user-select: none;
 	font-size: 20px;
 }
+
 .all h1 {
 	text-align: center;
 	font-size: 150%;
 	padding-top: 1%;
 }
-.h1al{
+
+.h1al {
 	display: none;
 	color: red
 }
+
 .main {
 	margin: 3% 0;
 	display: -ms-grid;
@@ -31,18 +37,22 @@
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
+
 .main h2 {
 	text-align: center;
 	margin: 2% 0;
 }
+
 .pimg,
 .cimg {
 	text-align: center;
 }
+
 .psimg,
 .csimg {
 	height: 150px;
 }
+
 .main .scorebox {
 	text-align: center;
 	font-size: 150%;
@@ -54,17 +64,21 @@
 	width: fit-content;
 	border-radius: 10px;
 }
+
 .splayer,
 .scomputer {
 	font-size: 300%;
 }
+
 .dstart {
 	text-align: center;
 }
+
 .dstart button {
 	padding: 1% 2%;
 	font-size: 150%;
 }
+
 .btn {
 	background: -o-linear-gradient(rgb(255, 0, 179), rgb(255, 0, 119));
 	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 0, 179)), to(rgb(255, 0, 119)));
@@ -72,45 +86,54 @@
 	border: 2px solid transparent;
 	border-radius: 10px;
 }
+
 .endpoint {
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 }
+
 .endpoint input {
 	background: rgba(255, 255, 255, 0.658);
 	width: 100%;
 	max-width: 300px;
 	font-size: 20px;
 }
+
 .rpcimg {
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	justify-content: space-around;
 }
+
 .rpcimg button {
 	width: 100%;
 }
+
 button img {
 	width: 100%;
 	max-width: 80px;
 }
-.draw{
+
+.draw {
 	display: none;
 	color: blue;
 }
-.win_pc{
+
+.win_pc {
 	color: red;
 	display: none;
 }
-.win_pl{
+
+.win_pl {
 	color: green;
 	display: none;
 }
-.rbtn{
-	 background: linear-gradient(rgb(255, 0, 119),rgb(255, 0, 179));
-	 border: none;
-	 padding: 1% 2%;
-	 font-size: 80%;
+
+.rbtn {
+	background: linear-gradient(rgb(255, 0, 119), rgb(255, 0, 179));
+	border: none;
+	padding: 1% 2%;
+	font-size: 80%;
 	border-radius: 10px;
 }
